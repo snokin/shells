@@ -7,7 +7,7 @@ sh ./fileorganize.sh
 ```
 该脚本内填写 sourcedir 和 destdir 的文件夹地址。然后脚本会将 soursedir 内的文件按类型和其修改时间移动到 destdir 目录内。
 ## 自动删除零碎小文件
-该脚本会自动删除小于 200k 的图片、视频和小于 1k 的零散文件。
+该脚本会自动删除小于 50k 的图片、小于 200k 的视频和小于 2k 的零散文件。
 使用 $1 变量获取用户输入，因此文件处理的路径需要在运行脚本的时候指定。
 ```shell
 sh ./delsmallfiles.sh /your/path
