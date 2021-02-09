@@ -3,7 +3,7 @@
 `sh xxx.sh` 运行。
 ## 自动按年月规整文件
 ```shell
-fileorganize.sh
+sh fileorganize.sh
 ```
 该脚本内填写 sourcedir 和 destdir 的文件夹地址。然后脚本会将 soursedir 内的文件按类型和其修改时间移动到 destdir 目录内。
 ## 自动删除零碎小文件
