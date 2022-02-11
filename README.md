@@ -12,7 +12,7 @@ sh ./fileorganize.sh
 sh ./delsmallfiles.sh /your/path
 ```
 ## 删除某个目录内指定后缀的文件
-该脚本删除指定目录内所有 .jpg 文件。文件处理的路径需要在脚本内的 sourdir 里指定。写这个脚本是因为某次用 rsync 同步目录的时候没注意同步来了大量无用的 .jpg 文件。
+该脚本删除指定目录内所有指定后缀的文件。文件处理的路径需要在后方输入。写这个脚本是因为某次用 rsync 同步目录的时候没注意同步来了大量无用的 .jpg 文件。
 ```shell
-sh ./deletejpgs.sh
+sh ./delemall.sh /your/path/to/dir *.jpg
 ````
