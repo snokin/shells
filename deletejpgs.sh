@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sourcedir="/home/tmp/wechat"
+sourcedir="$1"
 num=0
 
 startTime=$(date +"%Y-%m-%d %H:%M:%S")
@@ -13,7 +13,10 @@ killfiles(){
 
 OLDIFS=$IFS
 IFS=$(echo -en "\n\b")
-
+if [ ! -n $1 ]; then
+    echo "请输入一个有效地址"
+    exit 2
+fi
 pigs=$(find "$sourcedir" -type f -name "*.jpg")
 for fucks_sake in $pigs
 do
