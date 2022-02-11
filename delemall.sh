@@ -22,6 +22,7 @@ elif [ ! -n $2 ]; then
     echo "示例：sh delemall.sh /your/path/to/dir *.jpg"
     exit 2
 fi
+
 pigs=$(find "$sourcedir" -type f -name "$2")
 for fucks_sake in $pigs
 do
